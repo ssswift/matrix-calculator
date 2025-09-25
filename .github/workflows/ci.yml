@@ -10,26 +10,39 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Clean any existing build files
+      run: |
+        rm -rf build
+        find . -name "CMakeCache.txt" -delete
+        find . -name "CMakeFiles" -type d -exec rm -rf {} + 2>/dev/null || true
+
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y cmake g++ doxygen graphviz libgtest-dev
+        sudo apt-get install -y cmake g++ git build-essential
 
-    - name: Configure and Build
+    - name: Install Google Test
       run: |
-        cmake -B build
-        cmake --build build
+        git clone https://github.com/google/googletest.git -b release-1.13.0
+        cd googletest
+        mkdir build && cd build
+        cmake ..
+        make
+        sudo make install
 
-    - name: Run Tests
+    - name: Configure project
+      run: cmake -B build
+
+    - name: Build project
+      run: cmake --build build
+
+    - name: Run tests
       run: |
         cd build
-        ctest --output-on-failure
+        ctest --verbose
 
-    - name: Generate Documentation
+    - name: Generate documentation
       run: |
+        sudo apt-get install -y doxygen graphviz
         doxygen Doxyfile
-
-    - name: Verify Documentation
-      run: |
-        ls -la docs/html/index.html
-        echo "Documentation generated successfully"
+        ls -la docs/html/
