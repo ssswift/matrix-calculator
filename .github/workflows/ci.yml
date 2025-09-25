@@ -1,0 +1,35 @@
+name: Matrix Calculator CI
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++ doxygen graphviz libgtest-dev
+
+    - name: Configure and Build
+      run: |
+        cmake -B build
+        cmake --build build
+
+    - name: Run Tests
+      run: |
+        cd build
+        ctest --output-on-failure
+
+    - name: Generate Documentation
+      run: |
+        doxygen Doxyfile
+
+    - name: Verify Documentation
+      run: |
+        ls -la docs/html/index.html
+        echo "Documentation generated successfully"
