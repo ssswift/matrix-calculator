@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/swift/matrix-calculator/build/cmake_install.cmake",
+		"/Users/swift/matrix-calculator/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

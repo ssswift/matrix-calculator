@@ -1,0 +1,9 @@
+/Users/swift/matrix-calculator/build/CMakeFiles/matrix_lib.dir
+/Users/swift/matrix-calculator/build/CMakeFiles/matrix_calculator.dir
+/Users/swift/matrix-calculator/build/CMakeFiles/test.dir
+/Users/swift/matrix-calculator/build/CMakeFiles/edit_cache.dir
+/Users/swift/matrix-calculator/build/CMakeFiles/rebuild_cache.dir
+/Users/swift/matrix-calculator/build/tests/CMakeFiles/matrix_tests.dir
+/Users/swift/matrix-calculator/build/tests/CMakeFiles/test.dir
+/Users/swift/matrix-calculator/build/tests/CMakeFiles/edit_cache.dir
+/Users/swift/matrix-calculator/build/tests/CMakeFiles/rebuild_cache.dir

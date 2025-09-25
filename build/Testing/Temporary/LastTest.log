@@ -1,0 +1,43 @@
+Start testing: Sep 25 13:43 MSK
+----------------------------------------------------------
+1/1 Testing: matrix_tests
+1/1 Test: matrix_tests
+Command: "/Users/swift/matrix-calculator/build/tests/matrix_tests"
+Directory: /Users/swift/matrix-calculator/build/tests
+"matrix_tests" start time: Sep 25 13:43 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/swift/googletest/googletest/src/gtest_main.cc
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from MatrixTest
+[ RUN      ] MatrixTest.CreateAndFree
+[       OK ] MatrixTest.CreateAndFree (0 ms)
+[ RUN      ] MatrixTest.InvalidSize
+[       OK ] MatrixTest.InvalidSize (0 ms)
+[ RUN      ] MatrixTest.MatrixAddition
+[       OK ] MatrixTest.MatrixAddition (0 ms)
+[ RUN      ] MatrixTest.MatrixMultiplication
+[       OK ] MatrixTest.MatrixMultiplication (0 ms)
+[ RUN      ] MatrixTest.MatrixSum
+[       OK ] MatrixTest.MatrixSum (0 ms)
+[ RUN      ] MatrixTest.MatrixSumEmpty
+[       OK ] MatrixTest.MatrixSumEmpty (0 ms)
+[ RUN      ] MatrixTest.MatrixSumInvalidMatrix
+[       OK ] MatrixTest.MatrixSumInvalidMatrix (0 ms)
+[ RUN      ] MatrixTest.MatrixSumSingleElement
+[       OK ] MatrixTest.MatrixSumSingleElement (0 ms)
+[----------] 8 tests from MatrixTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   1.57 sec
+----------------------------------------------------------
+Test Passed.
+"matrix_tests" end time: Sep 25 13:43 MSK
+"matrix_tests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Sep 25 13:43 MSK

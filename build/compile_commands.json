@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/swift/matrix-calculator/build",
+  "command": "/usr/bin/clang++  -I/Users/swift/matrix-calculator/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/matrix_lib.dir/src/matrix.cpp.o -c /Users/swift/matrix-calculator/src/matrix.cpp",
+  "file": "/Users/swift/matrix-calculator/src/matrix.cpp",
+  "output": "CMakeFiles/matrix_lib.dir/src/matrix.cpp.o"
+},
+{
+  "directory": "/Users/swift/matrix-calculator/build",
+  "command": "/usr/bin/clang++  -I/Users/swift/matrix-calculator/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/matrix_calculator.dir/src/main.cpp.o -c /Users/swift/matrix-calculator/src/main.cpp",
+  "file": "/Users/swift/matrix-calculator/src/main.cpp",
+  "output": "CMakeFiles/matrix_calculator.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/swift/matrix-calculator/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/swift/matrix-calculator/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/matrix_tests.dir/test_matrix.cpp.o -c /Users/swift/matrix-calculator/tests/test_matrix.cpp",
+  "file": "/Users/swift/matrix-calculator/tests/test_matrix.cpp",
+  "output": "tests/CMakeFiles/matrix_tests.dir/test_matrix.cpp.o"
+}
+]
